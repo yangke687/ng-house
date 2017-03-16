@@ -22,6 +22,17 @@ gulp.task('html',function(){
 		.pipe($.connect.reload());
 });
 
+gulp.task('font',function(){
+	gulp.src(app.srcPath + 'style/fonts/*')
+		.pipe(gulp.dest(app.devPath + 'css/fonts'))
+		.pipe(gulp.dest(app.prdPath + 'css/fonts'))
+		.pipe($.connect.reload());
+	gulp.src(app.srcPath + 'style/iconfont.css')
+		.pipe(gulp.dest(app.devPath + 'css' ))
+		.pipe(gulp.dest(app.prdPath + 'css'))
+		.pipe($.connect.reload());
+});
+
 gulp.task('json',function(){
 	gulp.src(app.srcPath + "data/**/*.json")
 		.pipe(gulp.dest(app.devPath+'data'))
@@ -63,7 +74,7 @@ gulp.task('clean',function(){
 		.pipe($.clean());
 });
 
-gulp.task('build',[ 'lib','html','json','less','js','image']);
+gulp.task('build',[ 'lib','html','font','json','less','js','image']);
 
 gulp.task('serve',['build'],function(){
 	$.connect.server({
