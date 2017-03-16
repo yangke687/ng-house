@@ -1,0 +1,72 @@
+@import '../variable.less';
+
+.house-list{
+	.mt(40);
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		.item{
+			.ml(15);
+			.mr(15);
+			.pt(22);
+			.pb(21);
+			border-bottom: 1px solid @listItemBorderColor;
+			.logo{
+				.w(106);
+				.h(79.5);
+				.mr(12.78);
+			}
+			.title{
+				margin: 0;
+				white-space: nowrap;
+    			overflow: hidden;
+    			text-overflow: ellipsis;
+    			.fs(16);
+    			.lh(16);
+			}
+			.location{
+				margin: 0;
+				.mt(9);
+				.fs(16);
+				.lh(16);
+				color: @locationColor;
+			}
+			.desc{
+				margin: 0;
+				.mt(7);
+				.fs(16);
+				.lh(16);
+				color: @locationColor;
+				span:first-child{
+					.pr(12);
+				}
+				span:nth-child(3){
+					color: @totalPriceColor;
+					font-weight: 600;
+					.fs(16);
+				}
+			}
+			.tags{
+				margin: 0;
+				white-space: nowrap;
+    			overflow: hidden;
+    			text-overflow: ellipsis;
+				.mt(4);
+				.fs(14);
+				font-weight: 600;
+				span{
+					background: @tagBgColor;
+					color: @tagColor;
+					.pl(2);
+					.pr(2);
+					.pt(1);
+					.pb(1);
+					.mr(10);
+				}
+			}
+		}
+		
+	}
+}

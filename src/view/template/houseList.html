@@ -1,0 +1,19 @@
+<div class="bg-w house-list">
+	<ul>
+		<li ng-repeat="item in data" class="item p-r">
+			<img ng-src="{{item.img}}" alt="" class="f-l logo">
+			<p class="title" ng-bind="item.name"></p>
+			<p class="location" ng-bind="item.location"></p>
+			<p class="desc">
+				<span ng-bind="item.type"></span>
+				<span ng-bind="item.area+'平米'"></span>
+				<span class="f-r" ng-bind="item.totalPrice+'万'"></span>
+				<span class="clear"></span>
+			</p>
+			<p class="tags">
+				<span ng-repeat="tag in item.tags">{{tag}}</span>
+			</p>
+			<div class="clear"></div>
+		</li>
+	</ul>
+</div>
