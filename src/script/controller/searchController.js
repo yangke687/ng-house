@@ -1,5 +1,5 @@
 angular.module('myApp')
-	.controller('searchController', ['$http', '$scope', function($http, $scope) {
+	.controller('searchController', ['dict', '$http', '$scope', function(dict, $http, $scope) {
 		$scope.tabList = [{
 			id: 'district',
 			name: '区域',
@@ -10,4 +10,5 @@ angular.module('myApp')
 			id: 'type',
 			name: '房型'
 		}];
+		console.log(dict);
 	}]);
