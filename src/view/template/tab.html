@@ -1,0 +1,9 @@
+<ul class="tab">
+	<li ng-repeat="item in list"
+		class="d-ib ta-c"
+		ng-bind="item.name"
+		ng-click="click(item);"
+		ng-class="selectedId==item.id?'active':''"
+	>	
+	</li>
+</ul>

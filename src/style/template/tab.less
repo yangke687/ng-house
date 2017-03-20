@@ -1,0 +1,23 @@
+.tab{
+	display: flex;
+	background-color: @tabBgColor;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	.mt(40);
+	font-size: 0;
+	li{
+		list-style: none;
+		flex: 1;
+		.fs(14);
+		.h(40);
+		.lh(40);
+		border-bottom: 2px solid @tabBgColor;
+		&.active{
+			border-color: @headBgColor;
+		}
+	}
+}
