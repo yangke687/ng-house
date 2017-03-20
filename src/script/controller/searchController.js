@@ -10,5 +10,10 @@ angular.module('myApp')
 			id: 'type',
 			name: '房型'
 		}];
-		console.log(dict);
+		$scope.sheet = {
+			visible: false
+		};
+		$scope.tClick = function(id, name) {
+			$scope.sheet.visible = true;
+		}
 	}]);

@@ -5,11 +5,14 @@ angular.module('myApp')
 			templateUrl: 'view/template/tab.html',
 			replace: true,
 			scope: {
-				list: '='
+				list: '=',
+				tabClick: '&'
 			},
 			link: function(scope) {
 				scope.click = function(item) {
 					scope.selectedId = item.id;
+					console.log(item);
+					scope.tabClick(item);
 				}
 			}
 		};
