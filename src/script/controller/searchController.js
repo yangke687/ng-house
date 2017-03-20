@@ -21,4 +21,13 @@ angular.module('myApp')
 		$scope.sClick = function(id, name) {
 			console.log(id, name);
 		}
+		$scope.search = function() {
+			$http.get('/data/houseList.json')
+				.then(function(res) {
+					$scope.list = res.data;
+				}, function(err) {
+					// errro handling...
+				});
+		}
+		$scope.search();
 	}]);
