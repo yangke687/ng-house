@@ -1,6 +1,8 @@
-<div class="sheet" ng-show="isVisible">
+<div class="sheet" ng-show="isVisible" ng-click="isVisible=false">
 	<div class="wrap">
-		
+		<ul>
+			<li class="ta-c d-b" ng-repeat="item in list" ng-bind="item.name" ng-click="select(item)"></li>
+		</ul>
 		<button class="d-b" ng-click="isVisible=false">退出</button>
-	</div>	
+	</div>
 </div>

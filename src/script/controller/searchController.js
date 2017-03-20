@@ -11,9 +11,14 @@ angular.module('myApp')
 			name: '房型'
 		}];
 		$scope.sheet = {
+			list: [],
 			visible: false
 		};
 		$scope.tClick = function(id, name) {
+			$scope.sheet.list = dict[id];
 			$scope.sheet.visible = true;
+		}
+		$scope.sClick = function(id, name) {
+			console.log(id, name);
 		}
 	}]);

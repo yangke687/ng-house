@@ -11,7 +11,6 @@ angular.module('myApp')
 			link: function(scope) {
 				scope.click = function(item) {
 					scope.selectedId = item.id;
-					console.log(item);
 					scope.tabClick(item);
 				}
 			}

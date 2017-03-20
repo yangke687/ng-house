@@ -5,7 +5,9 @@ angular.module('myApp')
 			templateUrl: 'view/template/sheet.html',
 			replace: true,
 			scope: {
-				isVisible: '='
+				isVisible: '=',
+				list: '=',
+				select: '&'
 			},
 			link: function(scope) {
 
