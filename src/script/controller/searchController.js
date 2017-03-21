@@ -14,12 +14,36 @@ angular.module('myApp')
 			list: [],
 			visible: false
 		};
+		$scope.filterObj = {};
+		var tabId;
 		$scope.tClick = function(id, name) {
+			tabId = id;
 			$scope.sheet.list = dict[id];
 			$scope.sheet.visible = true;
 		}
 		$scope.sClick = function(id, name) {
-			console.log(id, name);
+			if (id) {
+				angular.forEach($scope.tabList, function(item) {
+					if (item.id === tabId) {
+						item.name = name;
+						$scope.filterObj[tabId + 'Id'] = id;
+					}
+				});
+			} else {
+				angular.forEach($scope.tabList, function(item) {
+					switch (item.id) {
+						case 'district':
+							item.name = '区域';
+							break;
+						case 'price':
+							item.name = '售价';
+							break;
+						case 'type':
+							item.name = '房型';
+							break;
+					}
+				});
+			}
 		}
 		$scope.search = function() {
 			$http.get('/data/houseList.json')
