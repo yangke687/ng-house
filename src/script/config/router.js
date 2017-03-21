@@ -14,6 +14,11 @@ angular.module('myApp')
 				url: '/me',
 				templateUrl: 'view/me.html',
 				controller: 'meController'
+			})
+			.state('house', {
+				url: '/house/:id',
+				templateUrl: 'view/house.html',
+				controller: 'houseController'
 			});
 		$urlRouterProvider.otherwise('main');
 	}]);
