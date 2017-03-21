@@ -30,18 +30,20 @@ angular.module('myApp')
 					}
 				});
 			} else {
+				delete $scope.filterObj[tabId + 'Id'];
 				angular.forEach($scope.tabList, function(item) {
-					switch (item.id) {
-						case 'district':
-							item.name = '区域';
-							break;
-						case 'price':
-							item.name = '售价';
-							break;
-						case 'type':
-							item.name = '房型';
-							break;
-					}
+					if (item.id === tabId)
+						switch (item.id) {
+							case 'district':
+								item.name = '区域';
+								break;
+							case 'price':
+								item.name = '售价';
+								break;
+							case 'type':
+								item.name = '房型';
+								break;
+						}
 				});
 			}
 		}
