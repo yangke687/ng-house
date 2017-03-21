@@ -17,6 +17,8 @@
 
 .icon-user:before { content: "\e600"; }
 
+.icon-phone:before { content: "\e621"; }
+
 .icon-search:before { content: "\e672"; }
 
 .icon-house:before { content: "\e619"; }

@@ -1,0 +1,39 @@
+.foot-bar{
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	.h(60);
+	.text{
+		flex: 1;
+		.fs(16);
+		img{
+			.w(45);
+			.h(45);
+			.ml(18);
+			.mt(8);
+			border-radius: 50%;
+		}
+		.rows{
+			display: inline-block;
+			padding: 8px 12px;
+			color: rgb(148,148,148);
+			span{
+				display: block;
+			}
+		}
+	}
+	.btn{
+		flex: 0 0 110px;
+		.pt(10);
+		.fs(14);
+		background-color: @btnGreenColor;
+		span{
+			display: block;
+		}
+		.iconfont{
+			.fs(21);	
+		}
+	}
+}
