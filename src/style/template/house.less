@@ -6,6 +6,7 @@
 }
 
 .house-info{
+	.mb(8);
 	ul{
 		margin: 0;
 		padding: 0;
@@ -80,6 +81,82 @@
 						.mr(11);
 						color: @houseInfoLabelColor;
 					}
+				}
+				&:first-child{
+					.pt(0);
+				}
+				&:last-child{
+					.pb(0);
+				}
+			}
+		}
+	}
+}
+
+.block-title(){
+	.pt(17);
+	.pb(17);
+	.pr(17);
+	border-bottom: 1px solid @houseInfoBorderColor;
+	h2{
+		margin: 0;
+		.pl(17);
+		.fs(18);
+		border-left: 6px solid @headBgColor;
+	}
+}
+
+.house-desc{
+	.mb(8);
+	color: @houseInfoTextColor;
+	.title{
+		.block-title();
+	}
+	.contact{
+		.pt(20);
+		.pb(5);
+		.pl(17);
+		.pr(17);
+		img{
+			.h(45);
+			.w(45);
+			border-radius: 50%;
+		}
+		.rows{
+			.h(45);
+			.lh(45);
+			.fs(0);
+		}
+		span{
+			.ml(11);
+			.fs(17);
+			&:last-child{
+				color: @houseInfoLabelColor;
+			}
+		}
+	}
+	.desc{
+		.pt(10);
+		.pb(10);
+		.pl(17);
+		.pr(17);
+		.block{
+			.sub-title{
+				margin: 0;
+				font-weight: normal;
+				.mt(16);
+				.fs(17);
+			}
+			.content{
+				.fs(15);
+				.lh(25);
+				color: @houseDescTextColor;
+				p{
+					.mt(10);
+					.mb(10);
+				}
+				p:last-child{
+					.mb(0);
 				}
 			}
 		}
