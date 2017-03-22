@@ -1,6 +1,6 @@
 <div class="bg-w house-list">
 	<ul>
-		<li ui-sref="house({id: item.id})" ng-repeat="item in data | filterByObj:filterObj" class="item p-r">
+		<li ui-sref="house({id: item.id})" ng-repeat="item in data | filterByObj:filterObj | limitTo:numLimit" class="item p-r">
 			<img ng-src="{{item.img}}" alt="" class="f-l logo">
 			<p class="title" ng-bind="item.name"></p>
 			<p class="location" ng-bind="item.location"></p>

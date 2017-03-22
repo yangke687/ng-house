@@ -7,6 +7,7 @@ angular.module('myApp')
 			scope: {
 				data: '=',
 				filterObj: '=',
+				numLimit: '=',
 			},
 			link: function(scope) {
 
