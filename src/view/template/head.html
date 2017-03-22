@@ -1,3 +1,7 @@
-<div class="head max-z-index">
-	<span class="text">租房/售房</span>
+<div class="head max-z-index p-r">
+	<div class="dropdown" ng-click="isVisible=!isVisible">
+		<span class="text" ng-bind="methodName"></span>
+		<span class="caret"></span>
+	</div>
+	<div app-sheet select="sClick(id,name)" is-visible="isVisible" list="methodList"></div>
 </div>

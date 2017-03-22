@@ -1,6 +1,6 @@
 angular.module('myApp')
 	.value('dict', {})
-	.run(['dict', '$http', function(dict, $http) {
+	.run(['dict', '$http', 'cache', function(dict, $http, cache) {
 		$http.get('/data/district.json')
 			.then(function(res) {
 				dict.district = res.data;
@@ -22,6 +22,13 @@ angular.module('myApp')
 			.then(function(res) {
 				dict.type = res.data;
 			}, function(err) {
+				// error handling...
+			});
+		$http.get('/data/method.json')
+			.then(function(res) {
+				dict.method = res.data;
+				cache.put('method', dict.method[0]);
+			}, function() {
 				// error handling...
 			});
 	}]);

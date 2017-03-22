@@ -1,11 +1,14 @@
 angular.module('myApp')
-	.directive('appHead',[function(){
+	.directive('appHead', ['cache', function(cache) {
 		return {
 			restrict: 'A',
 			replace: true,
 			templateUrl: 'view/template/head.html',
-			link: function(scope){
-
+			link: function(scope) {
+				scope.methodName = cache.getObj('method')['name'];
+				scope.$on('updateMethod', function() {
+					scope.methodName = cache.getObj('method')['name'];
+				});
 			}
 		};
 	}]);

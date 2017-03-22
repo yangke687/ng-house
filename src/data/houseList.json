@@ -11,7 +11,8 @@
 	"price": "8857",
 	"totalPrice": "155",
 	"priceId": "p6",
-	"tags": ["素质住户", "繁华地段", "品质小区"]
+	"tags": ["素质住户", "繁华地段", "品质小区"],
+	"methodId": "m2"
 }, {
 	"id": "A746961134",
 	"img": "http://pic1.ajkimg.com/display/hj/cc62f8840bba6c1bf553d1db0e001705/240x180m.jpg",
@@ -25,7 +26,8 @@
 	"price": "10747",
 	"totalPrice": "107",
 	"priceId": "p5",
-	"tags": ["采光好", "性价比高", "户型方正"]
+	"tags": ["采光好", "性价比高", "户型方正"],
+	"methodId": "m2"
 }, {
 	"id": "A767974796",
 	"img": "http://pic1.ajkimg.com/display/hj/6e0c028fdd19ce94d57a7c414e4ea223/240x180m.jpg",
@@ -39,7 +41,8 @@
 	"price": "7977",
 	"totalPrice": "71",
 	"priceId": "p3",
-	"tags": ["诚心出售", "公费学位", "急售"]
+	"tags": ["诚心出售", "公费学位", "急售"],
+	"methodId": "m2"
 }, {
 	"id": "A746609463",
 	"img": "http://pic1.ajkimg.com/display/hj/d89ecd3efa0289cacddccbdec7d7a8d2/240x180m.jpg",
@@ -53,7 +56,8 @@
 	"price": "8955",
 	"totalPrice": "120",
 	"priceId": "p5",
-	"tags": ["老年公寓", "小区配套", "业主转让"]
+	"tags": ["老年公寓", "小区配套", "业主转让"],
+	"methodId": "m2"
 }, {
 	"id": "A759978467",
 	"img": "http://pic1.ajkimg.com/display/hj/e722d5dfc45a4c9368bc4e480e6f003d/240x180m.jpg",
@@ -67,7 +71,8 @@
 	"price": "6690",
 	"totalPrice": "93",
 	"priceId": "p4",
-	"tags": ["环境优美", "主推户型", "品质小区"]
+	"tags": ["环境优美", "主推户型", "品质小区"],
+	"methodId": "m2"
 }, {
 	"id": "A754973809",
 	"img": "http://pic1.ajkimg.com/display/hj/6721ef8b6b5ff766d24c6e9a6a4de652/240x180m.jpg",
@@ -81,5 +86,6 @@
 	"price": "8436",
 	"totalPrice": "360",
 	"priceId": "p7",
-	"tags": ["独栋别墅", "品牌地产", "南北通透", "方正户型"]
+	"tags": ["独栋别墅", "品牌地产", "南北通透", "方正户型"],
+	"methodId": "m2"
 }]
