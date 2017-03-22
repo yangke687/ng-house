@@ -1,25 +1,57 @@
 [{
 	"id": "",
-	"name": "不限"
+	"name": "不限",
+	"methodId": "m1"
+}, {
+	"id": "p20",
+	"name": "500以下",
+	"methodId": "m1"
+}, {
+	"id": "p21",
+	"name": "500-1000",
+	"methodId": "m1"
+}, {
+	"id": "p22",
+	"name": "1000-1500",
+	"methodId": "m1"
+}, {
+	"id": "p23",
+	"name": "1500-2000",
+	"methodId": "m1"
+}, {
+	"id": "p24",
+	"name": "2000以上",
+	"methodId": "m1"
+}, {
+	"id": "",
+	"name": "不限",
+	"methodId": "m2"
 }, {
 	"id": "p1",
-	"name": "30万以下"
+	"name": "30万以下",
+	"methodId": "m2"
 }, {
 	"id": "p2",
-	"name": "30-50万"
+	"name": "30-50万",
+	"methodId": "m2"
 }, {
 	"id": "p3",
-	"name": "50-80万"
+	"name": "50-80万",
+	"methodId": "m2"
 }, {
 	"id": "p4",
-	"name": "80-100万"
+	"name": "80-100万",
+	"methodId": "m2"
 }, {
 	"id": "p5",
-	"name": "100-150万"
+	"name": "100-150万",
+	"methodId": "m2"
 }, {
 	"id": "p6",
-	"name": "150-200万"
+	"name": "150-200万",
+	"methodId": "m2"
 }, {
 	"id": "p7",
-	"name": "200万以上"
+	"name": "200万以上",
+	"methodId": "m2"
 }]

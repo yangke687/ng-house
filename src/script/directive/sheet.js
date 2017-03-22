@@ -7,7 +7,8 @@ angular.module('myApp')
 			scope: {
 				isVisible: '=',
 				list: '=',
-				select: '&'
+				select: '&',
+				filterObj: '='
 			},
 			link: function(scope) {
 

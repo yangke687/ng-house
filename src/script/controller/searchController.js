@@ -1,5 +1,5 @@
 angular.module('myApp')
-	.controller('searchController', ['dict', '$http', '$scope', function(dict, $http, $scope) {
+	.controller('searchController', ['dict', '$http', 'cache', '$scope', function(dict, $http, cache, $scope) {
 		$scope.tabList = [{
 			id: 'district',
 			name: '区域',
@@ -14,7 +14,12 @@ angular.module('myApp')
 			list: [],
 			visible: false
 		};
-		$scope.filterObj = {};
+		$scope.filterObj = {
+			methodId: cache.getObj('method')['id']
+		};
+		$scope.priceFilterObj = {
+			methodId: cache.getObj('method')['id']
+		}
 		var tabId;
 		$scope.tClick = function(id, name) {
 			tabId = id;
