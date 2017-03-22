@@ -8,6 +8,7 @@ angular.module('myApp')
 				data: '=',
 				filterObj: '=',
 				numLimit: '=',
+				orderByMethod: '=',
 			},
 			link: function(scope) {
 

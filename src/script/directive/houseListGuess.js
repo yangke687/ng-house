@@ -5,7 +5,7 @@ angular.module('myApp')
 			replace: true,
 			templateUrl: 'view/template/houseListGuess.html',
 			link: function(scope) {
-
+				scope.numLimit = 2;
 			}
 		};
 	}]);
