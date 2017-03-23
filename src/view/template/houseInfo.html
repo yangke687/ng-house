@@ -1,6 +1,13 @@
 <div class="house-info">
 	<div class="image-header p-r">
-		<img class="p-a" src="http://b.pic1.ajkimg.com/display/anjuke/3cbce2-%E5%B0%8A%E5%9B%AD%E5%9C%B0%E4%BA%A7/5f8513a6fbd3444fa532f7f0bbf350e7-599x450.jpg?t=1" alt="">
+		<ul rn-carousel rn-carousel-index="carouselIndex" rn-carousel-transition="hexagon" rn-carousel-auto-slide class="image p-a">
+		  <li ng-repeat="img in house.imgs">
+		    <div class="layer">
+		    	<img ng-src="{{img}}" alt="">
+		    </div>
+		  </li>
+		</ul>
+		<div class="indicators p-a ta-c" rn-carousel-indicators ng-if="house.imgs" slides="house.imgs" rn-carousel-index="carouselIndex"></div>
 	</div>
 	<div class="title bg-w">
 		<h2 ng-bind="house.name"></h2>
