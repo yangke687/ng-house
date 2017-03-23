@@ -8,39 +8,43 @@ var app = {
 	prdPath: 'dist/',
 };
 
-gulp.task('lib',function(){
+gulp.task('lib', function() {
 	gulp.src('lib/**/*.js')
+		.pipe(gulp.dest(app.devPath + 'vendor'))
+		.pipe(gulp.dest(app.prdPath + 'vendor'))
+		.pipe($.connect.reload());
+	gulp.src('lib/**/*.css')
 		.pipe(gulp.dest(app.devPath + 'vendor'))
 		.pipe(gulp.dest(app.prdPath + 'vendor'))
 		.pipe($.connect.reload());
 });
 
-gulp.task('html',function(){
+gulp.task('html', function() {
 	gulp.src(app.srcPath + '**/*.html')
 		.pipe(gulp.dest(app.devPath))
 		.pipe(gulp.dest(app.prdPath))
 		.pipe($.connect.reload());
 });
 
-gulp.task('font',function(){
+gulp.task('font', function() {
 	gulp.src(app.srcPath + 'style/fonts/*')
 		.pipe(gulp.dest(app.devPath + 'css/fonts'))
 		.pipe(gulp.dest(app.prdPath + 'css/fonts'))
 		.pipe($.connect.reload());
 	gulp.src(app.srcPath + 'style/iconfont.css')
-		.pipe(gulp.dest(app.devPath + 'css' ))
+		.pipe(gulp.dest(app.devPath + 'css'))
 		.pipe(gulp.dest(app.prdPath + 'css'))
 		.pipe($.connect.reload());
 });
 
-gulp.task('json',function(){
+gulp.task('json', function() {
 	gulp.src(app.srcPath + "data/**/*.json")
-		.pipe(gulp.dest(app.devPath+'data'))
-		.pipe(gulp.dest(app.prdPath+'data'))
+		.pipe(gulp.dest(app.devPath + 'data'))
+		.pipe(gulp.dest(app.prdPath + 'data'))
 		.pipe($.connect.reload());
 });
 
-gulp.task('less',function(){
+gulp.task('less', function() {
 	gulp.src(app.srcPath + 'style/index.less')
 		.pipe($.less())
 		.pipe(gulp.dest(app.devPath + 'css'))
@@ -50,7 +54,7 @@ gulp.task('less',function(){
 
 });
 
-gulp.task('js',function(){
+gulp.task('js', function() {
 	gulp.src(app.srcPath + 'script/**/*.js')
 		.pipe($.concat('index.js'))
 		.pipe(gulp.dest(app.devPath + 'js'))
@@ -59,7 +63,7 @@ gulp.task('js',function(){
 		.pipe($.connect.reload());
 });
 
-gulp.task('image',function(){
+gulp.task('image', function() {
 	gulp.src(app.srcPath + 'image/**/*')
 		.pipe(gulp.dest(app.devPath + 'image'))
 		.pipe($.imagemin())
@@ -69,27 +73,26 @@ gulp.task('image',function(){
 
 // clean 
 
-gulp.task('clean',function(){
-	gulp.src([ app.devPath,app.prdPath ])
+gulp.task('clean', function() {
+	gulp.src([app.devPath, app.prdPath])
 		.pipe($.clean());
 });
 
-gulp.task('build',[ 'lib','html','font','json','less','js','image']);
+gulp.task('build', ['lib', 'html', 'font', 'json', 'less', 'js', 'image']);
 
-gulp.task('serve',['build'],function(){
+gulp.task('serve', ['build'], function() {
 	$.connect.server({
 		root: [app.devPath],
 		livereload: true,
 		port: 4321
 	});
 	open("http://127.0.0.1:4321");
-	gulp.watch(app.srcPath + 'script/**/*.js',['js']);
-	gulp.watch('lib/**/*',['lib']);
-	gulp.watch(app.srcPath + '**/*.html',['html']);
-	gulp.watch(app.srcPath + 'data/**/*.json',['json']);
-	gulp.watch(app.srcPath + 'style/**/*.less',['less']);
-	gulp.watch(app.srcPath + 'image/**/*',['image']);
+	gulp.watch(app.srcPath + 'script/**/*.js', ['js']);
+	gulp.watch('lib/**/*', ['lib']);
+	gulp.watch(app.srcPath + '**/*.html', ['html']);
+	gulp.watch(app.srcPath + 'data/**/*.json', ['json']);
+	gulp.watch(app.srcPath + 'style/**/*.less', ['less']);
+	gulp.watch(app.srcPath + 'image/**/*', ['image']);
 });
 
-gulp.task('default',['serve'])
-
+gulp.task('default', ['serve'])
