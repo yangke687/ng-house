@@ -1,1 +1,1 @@
-angular.module('myApp', ['ui.router', 'ngCookies', 'ngAnimate', 'angular-carousel']);
+angular.module('myApp', ['ui.router', 'ngTouch', 'ngCookies', 'ngAnimate', 'angular-carousel']);
