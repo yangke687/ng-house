@@ -5,4 +5,9 @@ angular.module('myApp')
 			.then(function(res) {
 				$scope.list = res.data;
 			}, function() {});
+		$http.get('/data/house.json')
+			.then(function(res) {
+				console.log(res.data);
+				$scope.house = res.data;
+			}, function() {});
 	}]);

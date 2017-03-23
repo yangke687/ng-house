@@ -1,10 +1,10 @@
 <div ng-hide="1" app-head-bar text="'房屋详情'"></div>
 <div class="house-wrapper p-r">
-	<div app-house-info></div>
-	<div app-house-desc></div>
+	<div app-house-info house="house"></div>
+	<div app-house-desc house="house"></div>
 	<div app-house-extra></div>
 	<div app-house-map></div>
 	<div app-house-list-guess></div>
 	<div app-house-list-nearby></div>
 </div>
-<div app-foot-bar></div>
+<div app-foot-bar manager="house.manager"></div>

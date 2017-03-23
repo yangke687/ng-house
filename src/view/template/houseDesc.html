@@ -5,44 +5,15 @@
 	<div class="contact bg-w">
 		<img class="f-l" src="http://placehold.it/45x45" alt="">
 		<div class="rows">
-			<span>杨珂</span>
-			<span>官房地产</span>
+			<span ng-bind="house.manager.name"></span>
+			<span ng-bind="house.manager.corp"></span>
 		</div>
 	</div>
 	<div class="desc">
-		<div class="block">
-			<h2 class="sub-title no-mt">核心卖点</h2>
+		<div class="block" ng-repeat="block in house.desc">
+			<h2 class="sub-title no-mt" ng-bind="block.name"></h2>
 			<div class="content">
-				<p>野鸭湖别墅区位于昆明市东北部，地处盘龙区双龙乡，海拔2000-2300米，全年气候温湿。</p>
-				<p>野鸭湖拥有25000亩山林，区域内的绿地主要为原生林小区距市区18公里，自市中心到野鸭湖车程约40。</p>
-				<p>自2009年起集团公司*穿梭巴士，往返于野鸭湖和市区。每天往返2次。</p>
-				<p>从野鸭湖二期发车时间为上午10:00，下午2:00；</p>
-				<p>从博园世家的发车时间为上午11:00，下午3：00。</p>
-				<p>新增直达霖雨桥沃尔玛巴士。时间定于每周三下午13:00准时发车，16:00准时由沃尔玛返回小区。</p>
-				<p>另外还可以乘坐*路公交车前往双龙。</p>
-				<p>商业配套方面：我们项目约4公里左右，双龙乡上已有双龙综合市场、佳佳乐超市、农村信用合作社。</p>
-				<p>教育配套方面：周边有童心双语幼儿园、昆明市盘龙区双龙幼儿园、双龙中学、双龙中心学校。医疗方面：大可不必担心。双龙中心卫生院就可以解决。另外到北市区的一些专科医院也只要20多的车程，到昆华医院也只需要40-50车程。</p>
-			</div>
-		</div>
-		<div class="block">
-			<h2 class="sub-title">业主心态</h2>
-			<div class="content">
-				<p>本人从事房地产多年，公司有大量好房源，欢迎进入我的店铺查看，欢迎随时电话咨询，相信我的专业，为您置业安家保驾护航。</p>
-			</div>
-		</div>
-		<div class="block">
-			<h2 class="sub-title">小区配套</h2>
-			<div class="content">
-				<p>位置：小区地理位置*，绿化率高，居民素质高</p>
-				<p>配套：有健身器材，小型篮球场，可供小区居民使用</p>
-				<p>车位：停车位充足，建有地上停车场和地下车库</p>
-				<p>保安：小区内24*保安巡逻</p>
-			</div>
-		</div>
-		<div class="block">
-			<h2 class="sub-title">服务介绍</h2>
-			<div class="content">
-				<p>房东置换，诚心出售，价格可以再谈，欢迎看房，随时恭候。</p>
+				<p ng-repeat="p in block.content" ng-bind="p"></p>
 			</div>
 		</div>
 	</div>
