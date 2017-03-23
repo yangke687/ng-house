@@ -1,1 +1,1 @@
-angular.module('myApp', ['ui.router', 'ngCookies']);
+angular.module('myApp', ['ui.router', 'ngCookies', 'ngAnimate']);
