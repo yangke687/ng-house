@@ -3,5 +3,9 @@ angular.module('myApp')
 		return {
 			restrict: 'A',
 			templateUrl: 'view/template/footBar.html',
+			replace: true,
+			scope: {
+				manager: '='
+			}
 		};
 	}]);
