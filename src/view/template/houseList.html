@@ -7,7 +7,7 @@
 			<p class="desc">
 				<span ng-bind="item.type"></span>
 				<span ng-bind="item.area+'平米'"></span>
-				<span class="f-r" ng-bind="item.totalPrice+'万'"></span>
+				<span class="f-r" ng-bind="item.totalPrice+(item.methodId=='m1'?'元/月':'万')"></span>
 				<span class="clear"></span>
 			</p>
 			<p class="tags">

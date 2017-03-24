@@ -1,4 +1,19 @@
 [{
+	"id": "1053286015",
+	"img": "http://a.pic1.ajkimg.com/display/hj/d7883d4b21d308796f0c0609405b63f3/600x450.jpg?t=1",
+	"name": "欣都龙城 精装修 热水 沐浴 超高档办公环境 电梯房",
+	"location": "盘龙区 北辰财富中心",
+	"district": "盘龙区",
+	"districtId": "d2",
+	"type": "2室2厅",
+	"typeId": "t2",
+	"area": "91",
+	"price": "0",
+	"totalPrice": "3500",
+	"priceId": "p24",
+	"tags": ["可做饭", "阳台"],
+	"methodId": "m1"
+}, {
 	"id": "A766582754",
 	"img": "http://pic1.ajkimg.com/display/hj/51bdc1d9ae0e036632723b48ca82eb30/240x180m.jpg",
 	"name": "盘龙区金典后山野鸭湖原生态联排别墅毛坯带花园带车位采光好",
