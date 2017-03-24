@@ -19,7 +19,15 @@
 
 .icon-phone:before { content: "\e621"; }
 
+.icon-star:before { content: "\e666"; }
+
 .icon-search:before { content: "\e672"; }
 
 .icon-house:before { content: "\e619"; }
+
+.icon-share:before { content: "\e609"; }
+
+.icon-return:before { content: "\e629"; }
+
+.icon-complaint:before { content: "\e601"; }
 

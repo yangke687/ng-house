@@ -40,6 +40,44 @@
 			.bottom(8);
 			width: 100%;
 		}
+		.icon-wrapper{
+			.top(60);
+			.pt(19);
+			.pl(22);
+			.pr(22);
+			left: 0;
+			right: 0;
+			z-index: 1000;
+			.bg{
+				.fs(0);
+				.w(23);
+				.h(23);
+				vertical-align: middle;
+				padding: 3px;
+				border-radius: 50%;
+				background: rgba(0,0,0,.2);
+				.iconfont{
+				   	.fs(22);
+				   	.lh(22);
+				    color: @defaultColor;
+				}
+				.icon-return{
+					.top(7);
+				   	.left(3);
+				}
+				.icon-star{
+					.top(5);
+				   	.left(4);
+				}
+				.icon-share{
+					.top(7);
+					.left(4);
+				}
+				&:last-child{
+					.mr(14);
+				}
+			}
+		}
 	}
 	.title{
 		h2{
