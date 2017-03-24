@@ -2,7 +2,7 @@
 	overflow: hidden; 
 	right: 0; 
 	left: 0; 
-	.bottom(60);
+	//.bottom(60);
 }
 
 .house-info{
@@ -41,7 +41,7 @@
 			width: 100%;
 		}
 		.icon-wrapper{
-			.top(60);
+			.top(0);
 			.pt(19);
 			.pl(22);
 			.pr(22);
@@ -50,28 +50,28 @@
 			z-index: 1000;
 			.bg{
 				.fs(0);
-				.w(23);
-				.h(23);
+				width: 22px;
+				height: 22px;
 				vertical-align: middle;
 				padding: 3px;
 				border-radius: 50%;
 				background: rgba(0,0,0,.2);
 				.iconfont{
-				   	.fs(22);
-				   	.lh(22);
+				   	font-size: 23px;
+				   	line-height: 23px;
 				    color: @defaultColor;
 				}
 				.icon-return{
-					.top(7);
-				   	.left(3);
+					top: 4.3px;
+				  	left: 1.4px;
 				}
 				.icon-star{
-					.top(5);
-				   	.left(4);
+					top: 2px;
+					left: 2px;
 				}
 				.icon-share{
-					.top(7);
-					.left(4);
+					top: 5px;
+					left: 2.5px;
 				}
 				&:last-child{
 					.mr(14);
