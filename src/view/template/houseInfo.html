@@ -1,7 +1,7 @@
 <div class="house-info">
 	<div class="image-header p-r">
 		<div class="icon-wrapper p-a">
-			<div class="bg d-ib ta-c p-r">
+			<div class="bg d-ib ta-c p-r" ng-click="back();">
 				<span class="iconfont icon-return p-a"></span>
 			</div>
 			<div class="bg d-ib ta-c p-r f-r">
@@ -11,7 +11,7 @@
 				<span class="iconfont icon-star p-a"></span>
 			</div>
 		</div>
-		<ul rn-carousel rn-carousel-index="carouselIndex" rn-carousel-transition="hexagon" class="image p-a">
+		<ul rn-carousel rn-carousel-index="carouselIndex" rn-carousel-transition="hexagon" rn-carousel-auto-slide ng-class="image p-a">
 		  <li ng-repeat="img in house.imgs">
 		    <div class="layer">
 		    	<img ng-src="{{img}}" alt="">
