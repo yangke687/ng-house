@@ -30,4 +30,26 @@
 			}
 		}
 	}
+	ul.stat{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		.mt(20);
+		color: @defaultColor;
+		li{
+			flex: 1;
+			list-style: none;
+			border-right: 1px solid @meHeadLoginBlockBorderColor;
+			h2{
+				margin: 0;
+				.fs(16);
+			}
+			.content{
+				.fs(14);
+			}
+			&:last-child{
+				border: none;
+			}
+		}
+	}
 }
