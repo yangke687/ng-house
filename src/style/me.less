@@ -1,0 +1,33 @@
+.login-head{
+	.h(180);
+	background: @headBgColor;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	.avatar{
+		.pt(15);
+		img{
+			.w(60);
+			.h(60);
+			border-radius: 50%;
+		}
+		.text{
+			color: @defaultColor;
+			.fs(0);
+			span{
+				margin: 0;
+				.fs(14);
+				font-weight: normal;
+				&:first-child{
+					.pr(5);
+					.lh(13);
+					border-right: 1px solid @defaultColor;
+				}
+				&:last-child{
+					.pl(6);
+				}
+			}
+		}
+	}
+}
