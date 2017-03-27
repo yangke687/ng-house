@@ -1,7 +1,8 @@
+.me{
+
 .login-head{
 	.h(180);
 	background: @headBgColor;
-	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -52,4 +53,82 @@
 			}
 		}
 	}
+}
+
+.history{
+	.top(195);
+	left: 0;
+	right: 0;
+	.h(155);
+	.pt(5);
+	.pb(5);
+	.pl(17);
+	.pr(17);
+	h2{
+		margin: 0;
+		.fs(16);
+		font-weight: normal;
+		color: @historyTitleColor;
+	}
+}
+
+.icons-wrapper{
+	.top(373);
+	left: 0;
+	right: 0;
+	ul{
+		padding: 0;
+		margin: 0;
+		display: flex;
+		.fs(0);
+		color: @meTextColor;
+		border-bottom: 1px solid @meBorderColor;
+		&:last-child{
+			border: none;
+		}
+		li{
+			flex: 1;
+			list-style: none;
+			border-right: 1px solid @meBorderColor;
+			.pt(20);
+			.pb(20);
+			.pl(27);
+			.pr(27);
+			.fs(16);
+			&:last-child{
+				border: none;
+			}
+			.iconfont{
+				.fs(33);
+			}
+			.icon-coupon{
+				color: rgb(204,97,43);
+			}
+			.icon-order{
+				color: rgb(65,132,193);
+			}
+			.icon-collect{
+				color: rgb(105,147,0);
+			}
+			.icon-assess{
+				color: rgb(61,138,244);
+			}
+			.icon-sell-house{
+				color: rgb(112,156,56);
+			}
+			.icon-question{
+				color: rgb(73,117,200);
+			}
+			.icon-cal{
+				color: rgb(183,82,12);
+			}
+			.icon-look-house{
+				color: rgb(77,128,190);	
+			}
+			.icon-suggest{
+				color: rgb(53,134,240);
+			}
+		}
+	}
+}
 }
