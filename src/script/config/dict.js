@@ -31,4 +31,11 @@ angular.module('myApp')
 			}, function() {
 				// error handling...
 			});
+		//
+		cache.put('history', {
+			1: 2
+		});
+		cache.put('history2', {
+
+		})
 	}]);
