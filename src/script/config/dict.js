@@ -1,6 +1,6 @@
 angular.module('myApp')
 	.value('dict', {})
-	.run(['dict', '$http', 'cache', function(dict, $http, cache) {
+	.run(['dict', '$http', 'cache', 'localStorageService', function(dict, $http, cache, localStorageService) {
 		$http.get('/data/district.json')
 			.then(function(res) {
 				dict.district = res.data;
@@ -32,10 +32,8 @@ angular.module('myApp')
 				// error handling...
 			});
 		//
-		cache.put('history', {
-			1: 2
-		});
-		cache.put('history2', {
-
-		})
+		if (localStorageService.isSupported) {
+			if (!localStorageService.get('history'))
+				localStorageService.set('history', {});
+		}
 	}]);

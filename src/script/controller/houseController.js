@@ -1,6 +1,7 @@
 angular.module('myApp')
-	.controller('houseController', ['$http', '$stateParams', 'cache', '$scope',
-		function($http, $stateParams, cache, $scope) {
+	.controller('houseController', ['$http', '$stateParams', 'localStorageService', '_', '$scope',
+
+		function($http, $stateParams, localStorageService, _, $scope) {
 			$scope.id = $stateParams.id;
 			$scope.numLimit = 2;
 			$scope.mapOpts = {
@@ -14,6 +15,12 @@ angular.module('myApp')
 			$http.get('/data/house-' + $scope.id + '.json')
 				.then(function(res) {
 					$scope.house = res.data;
-				}, function() {});
+					// put current house obj in localStorage
+					if (localStorageService.isSupported) {
+						var history = localStorageService.get('history');
+						history[$scope.id] = res.data;
+						localStorageService.set('history', history);
+					}
+				}, function(err) {});
 		}
 	]);
