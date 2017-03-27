@@ -1,0 +1,53 @@
+{
+	"id": "A767974796",
+	"imgs": [
+		"http://a.pic1.ajkimg.com/display/anjuke/3dc335-%E6%96%B0%E4%BA%9A%E5%9C%B0%E4%BA%A7/dba27c3cade039a25d8cf6e747c8fdb5-599x450.jpg?t=1",
+		"http://b.pic1.ajkimg.com/display/anjuke/242d00-%E6%96%B0%E4%BA%9A%E5%9C%B0%E4%BA%A7/523cccba8736df15c6d379fc2f9367fa-599x450.jpg?t=1",
+		"http://b.pic1.ajkimg.com/display/anjuke/780d23-%E6%96%B0%E4%BA%9A%E5%9C%B0%E4%BA%A7/9c25fc0448c866447727e3353996095b-599x450.jpg?t=1",
+		"http://b.pic1.ajkimg.com/display/anjuke/b7ff50-%E5%B0%8A%E5%9B%AD%E5%9C%B0%E4%BA%A7/9f01f075b4b18045c75bf40eefbd2dbc-599x450.jpg?t=1",
+		"http://a.pic1.ajkimg.com/display/anjuke/ac9af1-%E5%B0%8A%E5%9B%AD%E5%9C%B0%E4%BA%A7/025ecefff0f61adf26fc60d57bb19ae1-599x450.jpg?t=1"
+	],
+	"name": "世纪城俊发海东俊园，湿地叠加别墅带花园地下室电梯入户470万",
+	"methodId": "m2",
+	"totalPrice": "470",
+	"type": "4室2厅",
+	"area": "290",
+	"price": "16206",
+	"floor": "共一层",
+	"direction": "南北",
+	"entireType": "别墅",
+	"decoration": "毛坯",
+	"years": "2015",
+	"publishAt": "2017-03-26",
+	"manager": {
+		"id": "1",
+		"name": "杨珂",
+		"corp": "官房地产"
+	},
+	"desc": [{
+		"name": "核心卖点",
+		"content": [
+			"客厅：豪华客厅，通透明亮，格局方正。会客双大厅卧室：",
+			"主卧方正阔气，套房设计，功能齐全，附带独立卫生间，*卫生餐厅：大小适中，满足一般家庭宴请之需",
+			"会客双餐厅花园：带前后大花园。面积60-110平。城市别墅标准花园"
+		]
+	}, {
+		"name": "业主心态",
+		"content": [
+			"房东置换，诚心出售，价格可以再谈，欢迎看房，随时恭候"
+		]
+	}, {
+		"name": "小区配套",
+		"content": [
+			"位置：小区地理位置*，绿化率高，居民素质高",
+			"配套：有健身器材，小型篮球场，可供小区居民使用",
+			"车位：停车位充足，建有地上停车场和地下车库",
+			"保安：小区内24*保安巡逻"
+		]
+	}, {
+		"name": "服务介绍",
+		"content": [
+			"本人从事房地产多年，公司有大量好房源，欢迎进入我的店铺查看，欢迎随时电话咨询，相信我的专业，为您置业安家保驾护航。"
+		]
+	}]
+}

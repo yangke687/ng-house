@@ -1,0 +1,51 @@
+{
+	"id": "1053286015",
+	"imgs": [
+		"http://a.pic1.ajkimg.com/display/hj/4011ddaa6b8a88ad21e19af63faf1eb2/600x450.jpg?t=1",
+		"http://c.pic1.ajkimg.com/display/hj/2773d937c6349b5833e95149d7efb315/600x450.jpg?t=1",
+		"http://d.pic1.ajkimg.com/display/hj/704120f5a87b4a279d940b16b24d154d/600x450.jpg?t=1",
+		"http://d.pic1.ajkimg.com/display/hj/c0b0d7326814d9a1841be707cc3168b9/600x450.jpg?t=1",
+		"http://c.pic1.ajkimg.com/display/hj/b3c620b194fdb758e4bebd78c09179c3/600x450.jpg?t=1",
+		"http://c.pic1.ajkimg.com/display/hj/f6f878a99cf6670e37ad4018a37aeffb/600x450.jpg?t=1"
+	],
+	"name": "滇池卫城 花园板式房南北通透 双面采光 仅租3300元/月",
+	"methodId": "m1",
+	"totalPrice": "3300",
+	"type": "3室2厅1卫",
+	"area": "100",
+	"price": "3300",
+	"floor": "共一层",
+	"direction": "南北",
+	"entireType": "普通住宅",
+	"decoration": "豪华装修",
+	"years": "",
+	"renting": "整租",
+	"pay": "半年付",
+	"publishAt": "2017-03-20",
+	"manager": {
+		"id": "1",
+		"name": "杨珂",
+		"corp": "官房地产"
+	},
+	"desc": [{
+		"name": "房源优势",
+		"content": [
+			"位置：位于滇池度假区，滇池卫城尚层小区，小区环境好，绿化率高，有小孩游乐场所，小区间距比较宽，学区房。",
+			"朝向：南北朝向，采光超好，日照时间很长，比较适合居住。",
+			"楼层：6楼，多层电梯洋房，采光好，视野开阔，前后间距比较宽，正对小区主景观。",
+			"看房方便，图为真实照片，随时可以看房，欢迎来电咨询，实地看房。"
+		]
+	}, {
+		"name": "交通",
+		"content": [
+			"公交线路106路、A9路、C143路、141路等公交车站直达滇池卫城。开车走前新路到金马坊仅需18"
+		]
+	}, {
+		"name": "周边配套",
+		"content": [
+			"1.滇池实验小学、中学、高中（昆明市十大重点实验学校之一）扬帆贝贝幼儿园、度假区幼儿园，云南大学滇池学院等高等教育机构。",
+			"2. 同仁医院、儿童医院、社区医院等医疗设备场所。",
+			"3. 云南民蔟村、海埂公园、福保文化城、快乐海鲜、今日旺角、等多个休闲娱乐场所，大商汇（沃尔玛）、南亚风情园（家乐福）等大型购物中心。"
+		]
+	}]
+}
