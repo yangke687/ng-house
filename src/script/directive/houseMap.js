@@ -3,6 +3,6 @@ angular.module('myApp')
 		return {
 			restrict: 'A',
 			replace: true,
-			templateUrl: 'view/template/houseMap.html'
+			templateUrl: 'view/template/houseMap.html',
 		};
 	}]);
