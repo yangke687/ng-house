@@ -34,6 +34,6 @@ angular.module('myApp')
 		//
 		if (localStorageService.isSupported) {
 			if (!localStorageService.get('history'))
-				localStorageService.set('history', {});
+				localStorageService.set('history', []);
 		}
 	}]);

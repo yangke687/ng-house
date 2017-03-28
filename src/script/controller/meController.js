@@ -1,4 +1,8 @@
 angular.module('myApp')
 	.controller('meController', ['$http', 'localStorageService', '$scope', function($http, localStorageService, $scope) {
-		console.log(localStorageService.get('history'));
+		$scope.list = [];
+		if (localStorageService.isSupported) {
+			$scope.list = localStorageService.get('history');
+			console.log($scope.list);
+		}
 	}]);

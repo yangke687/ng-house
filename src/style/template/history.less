@@ -1,0 +1,51 @@
+.history{
+	ul{
+		margin: 0;
+		.mt(10);
+		.h(100);
+		li{
+			.layer{
+				height: 100%;
+				img{
+					.w(117);
+					.h(87);
+					.mr(10);
+				}
+				p{
+					margin: 0;
+					.mb(10);
+					color: @meHistoryLabelColor;
+					white-space: nowrap;
+		   			overflow: hidden;
+		    		text-overflow: ellipsis;
+		    		.lh(16);
+		    		.fs(0);
+		    		span{
+		    			.fs(16);
+		    			.mr(7);
+		    			&:last-child{
+		    				.mr(0);
+		    			}
+		    		}
+				}
+				.title{
+					color: @houseInfoTextColor;
+				}
+			}
+		}
+	}
+	.indicators{
+		span{
+			.mr(10);
+			.w(9);
+			.h(9);
+			color: @meHistoryIndicatorColor;
+			&.active{
+				color: @meHistoryIndicatorActColor;
+			}
+			&:last-child{
+				.mr(0);
+			}
+		}
+	}
+}

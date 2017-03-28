@@ -1,0 +1,22 @@
+<div class="history bg-w p-a">
+	<h2>最近浏览</h2>
+	<ul rn-carousel rn-carousel-index="carouselIndex" >
+		<li ng-repeat="item in data">
+			<div class="layer">
+				<img class="f-l d-b" ng-src="{{item.imgs[0]}}" alt="">
+				<p class="title">
+					<span ng-bind="item.name"></span>
+				</p>
+				<p class="desc">
+					<span ng-bind="item.price+(item.methodId=='m1' ? '元/月':'万')"></span>
+					<span ng-bind="item.type"></span>
+					<span ng-bind="item.area+'平米'"></span>
+				</p>
+				<p>
+					<span ng-bind="item.location"></span>
+				</p>
+			</div>
+		</li>
+	</ul>
+	<div class="indicators ta-c" rn-carousel-indicators ng-if="data.length>1" slides="data" rn-carousel-index="carouselIndex"></div>
+</div>

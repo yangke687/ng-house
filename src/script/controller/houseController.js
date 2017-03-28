@@ -18,8 +18,12 @@ angular.module('myApp')
 					// put current house obj in localStorage
 					if (localStorageService.isSupported) {
 						var history = localStorageService.get('history');
-						history[$scope.id] = res.data;
-						localStorageService.set('history', history);
+						if (!_.findWhere(history, {
+								id: res.data.id
+							})) {
+							history.push(res.data);
+							localStorageService.set('history', history);
+						}
 					}
 				}, function(err) {});
 		}
