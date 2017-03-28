@@ -13,6 +13,9 @@
 			.pt(22);
 			.pb(21);
 			border-bottom: 1px solid @listItemBorderColor;
+			&:last-child{
+				border: none;
+			}
 			.logo{
 				.w(106);
 				.h(79.5);
@@ -68,5 +71,17 @@
 			}
 		}
 		
+	}
+}
+
+.load-more{
+	.pl(18);
+	.pr(18);
+	.pb(20);
+	.text{
+		.pt(14);
+		.pb(14);
+		color: @loadMoreTextColor;
+		background: @loadMoreBgColor;
 	}
 }
