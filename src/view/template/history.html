@@ -1,7 +1,7 @@
 <div class="history bg-w p-a">
 	<h2>最近浏览</h2>
 	<ul rn-carousel rn-carousel-index="carouselIndex" >
-		<li ng-repeat="item in data">
+		<li ui-sref="house({id: item.id})" ng-repeat="item in data">
 			<div class="layer">
 				<img class="f-l d-b" ng-src="{{item.imgs[0]}}" alt="">
 				<p class="title">

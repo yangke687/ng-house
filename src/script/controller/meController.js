@@ -3,6 +3,5 @@ angular.module('myApp')
 		$scope.list = [];
 		if (localStorageService.isSupported) {
 			$scope.list = localStorageService.get('history');
-			console.log($scope.list);
 		}
 	}]);
