@@ -26,5 +26,6 @@ angular.module('myApp')
 						}
 					}
 				}, function(err) {});
+			$scope.visible = true;
 		}
 	]);

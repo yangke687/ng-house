@@ -14,7 +14,7 @@
 		<ul rn-carousel rn-carousel-index="carouselIndex" rn-carousel-transition="hexagon" rn-carousel-auto-slide class="image p-a">
 		  <li ng-repeat="img in house.imgs">
 		    <div class="layer">
-		    	<img ng-src="{{img}}" alt="">
+		    	<img ng-src="{{img}}" alt="" show-on-load ng-show="visible">
 		    </div>
 		  </li>
 		</ul>
