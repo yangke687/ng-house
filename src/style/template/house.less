@@ -240,6 +240,47 @@
 	}
 }
 
+.house-support{
+	.mb(8);
+	.title{
+		.block-title();
+	}
+	ul.supports{
+		margin: 0;
+		.pt(10);
+		.pb(10);
+		.pl(23);
+		.pr(23);
+		.fs(0);
+		li.support{
+			width: 33.333333%;
+			.pt(7);
+			.pb(7);
+			.fs(17);
+			color: @houseSupportsColor;
+			.iconfont{
+				vertical-align: top;
+				.mr(5);
+				.lh(17);
+				.fs(17)
+			}
+			.text{
+				.lh(17);
+			}
+			&:nth-child(3n-1){
+				text-align: center;
+			}
+			&:nth-child(3n+3){
+				text-align: right;
+			}
+		}
+		li.support.disable{
+			color: @houseSupportsDisableColor;
+			text-decoration: line-through;
+		}
+	}
+}
+
 .house-map{
 	.mb(8);
 	.title{

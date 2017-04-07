@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('fonts/iconfont.eot?t=1490580547161'); /* IE9*/
-  src: url('fonts/iconfont.eot?t=1490580547161#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('fonts/iconfont.woff?t=1490580547161') format('woff'), /* chrome, firefox */
-  url('fonts/iconfont.ttf?t=1490580547161') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('fonts/iconfont.svg?t=1490580547161#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('./fonts/iconfont.eot?t=1491544481112'); /* IE9*/
+  src: url('./fonts/iconfont.eot?t=1491544481112#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/iconfont.woff?t=1491544481112') format('woff'), /* chrome, firefox */
+  url('./fonts/iconfont.ttf?t=1491544481112') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('./fonts/iconfont.svg?t=1491544481112#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -14,6 +14,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-bath:before { content: "\e604"; }
 
 .icon-user:before { content: "\e600"; }
 
@@ -25,6 +27,8 @@
 
 .icon-collect:before { content: "\e61f"; }
 
+.icon-wash:before { content: "\e646"; }
+
 .icon-house:before { content: "\e619"; }
 
 .icon-share:before { content: "\e609"; }
@@ -33,13 +37,31 @@
 
 .icon-coupon:before { content: "\e618"; }
 
+.icon-bed:before { content: "\e605"; }
+
+.icon-freeze:before { content: "\e62c"; }
+
 .icon-order:before { content: "\e613"; }
+
+.icon-tv:before { content: "\e607"; }
 
 .icon-return:before { content: "\e629"; }
 
 .icon-suggest:before { content: "\e6b9"; }
 
+.icon-wifi:before { content: "\e617"; }
+
+.icon-cook:before { content: "\e608"; }
+
 .icon-look-house:before { content: "\e602"; }
+
+.icon-balcony:before { content: "\e627"; }
+
+.icon-hot-water:before { content: "\e60c"; }
+
+.icon-bathroom:before { content: "\e620"; }
+
+.icon-air:before { content: "\e60b"; }
 
 .icon-question:before { content: "\e603"; }
 
