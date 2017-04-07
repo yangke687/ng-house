@@ -50,7 +50,7 @@
 			<li>
 				<div>
 					<label for="" ng-bind="(house.methodId=='m1'?'租金':'单价')+':'"></label>
-					<span ng-bind="house.price+'元/平米'"></span>
+					<span ng-bind="house.price+(house.methodId=='m1'?'元/月':'元/平米')"></span>
 				</div>
 				<div ng-show="house.methodId=='m1'">
 					<label for="" >租赁:</label>
