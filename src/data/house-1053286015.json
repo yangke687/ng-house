@@ -47,5 +47,67 @@
 			"2. 同仁医院、儿童医院、社区医院等医疗设备场所。",
 			"3. 云南民蔟村、海埂公园、福保文化城、快乐海鲜、今日旺角、等多个休闲娱乐场所，大商汇（沃尔玛）、南亚风情园（家乐福）等大型购物中心。"
 		]
-	}]
+	}],
+	"supports": [
+		{
+			"id":  "1",
+			"icon": "icon-bed",
+			"name": "床",
+			"stat": "enable"
+		},
+		{
+			"id":  "2",
+			"icon": "icon-wash",
+			"name": "洗衣机",
+			"stat": "enable"
+		},
+		{
+			"id":  "3",
+			"icon": "icon-air",
+			"name": "空调",
+			"stat": "disable"
+		},
+		{
+			"id":  "4",
+			"icon": "icon-freeze",
+			"name": "冰箱",
+			"stat": "enable"
+		},
+		{
+			"id":  "5",
+			"icon": "icon-hot-water",
+			"name": "热水器",
+			"stat": "enable"
+		},
+		{
+			"id":  "6",
+			"icon": "icon-tv",
+			"name": "电视",
+			"stat": "enable"
+		},
+		{
+			"id":  "7",
+			"icon": "icon-wifi",
+			"name": "宽带",
+			"stat": "disable"
+		},
+		{
+			"id":  "8",
+			"icon": "icon-cook",
+			"name": "可做饭",
+			"stat": "disable"
+		},
+		{
+			"id":  "9",
+			"icon": "icon-balcony",
+			"name": "阳台",
+			"stat": "enable"
+		},
+		{
+			"id":  "10",
+			"icon": "icon-bathroom",
+			"name": "独立浴室",
+			"stat": "enable"
+		}
+	]
 }

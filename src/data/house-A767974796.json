@@ -62,5 +62,67 @@
 		"content": [
 			"本人从事房地产多年，公司有大量好房源，欢迎进入我的店铺查看，欢迎随时电话咨询，相信我的专业，为您置业安家保驾护航。"
 		]
-	}]
+	}],
+	"supports": [
+		{
+			"id":  "1",
+			"icon": "icon-bed",
+			"name": "床",
+			"stat": "enable"
+		},
+		{
+			"id":  "2",
+			"icon": "icon-wash",
+			"name": "洗衣机",
+			"stat": "disable"
+		},
+		{
+			"id":  "3",
+			"icon": "icon-air",
+			"name": "空调",
+			"stat": "disable"
+		},
+		{
+			"id":  "4",
+			"icon": "icon-freeze",
+			"name": "冰箱",
+			"stat": "disable"
+		},
+		{
+			"id":  "5",
+			"icon": "icon-hot-water",
+			"name": "热水器",
+			"stat": "disable"
+		},
+		{
+			"id":  "6",
+			"icon": "icon-tv",
+			"name": "电视",
+			"stat": "enable"
+		},
+		{
+			"id":  "7",
+			"icon": "icon-wifi",
+			"name": "宽带",
+			"stat": "disable"
+		},
+		{
+			"id":  "8",
+			"icon": "icon-cook",
+			"name": "可做饭",
+			"stat": "disable"
+		},
+		{
+			"id":  "9",
+			"icon": "icon-balcony",
+			"name": "阳台",
+			"stat": "enable"
+		},
+		{
+			"id":  "10",
+			"icon": "icon-bathroom",
+			"name": "独立浴室",
+			"stat": "disable"
+		}
+	]
 }
