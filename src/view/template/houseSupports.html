@@ -1,0 +1,11 @@
+<div class="house-support bg-w">
+	<div class="title">
+		<h2>房间配置</h2>
+	</div>
+	<ul class="supports">
+		<li class="support d-ib" ng-class="support.stat" ng-repeat="support in house.supports">
+			<span class="iconfont" ng-class="support.icon"></span>
+			<span class="text" ng-bind="support.name"></span>
+		</li>
+	</ul>
+</div>
