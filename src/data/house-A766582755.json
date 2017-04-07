@@ -1,0 +1,48 @@
+{
+	"id": "A766582755",
+	"imgs": [
+		"http://b.pic1.ajkimg.com/display/hj/e0a58b2674652fc6f4f5075fdbed4959/600x450.jpg?t=1",
+		"http://a.pic1.ajkimg.com/display/hj/d5b1efa0aa095b9eff5997354b36cedd/600x450.jpg?t=1",
+		"http://c.pic1.ajkimg.com/display/hj/bb64f9e891fa45605494c7cc5a7054eb/600x450.jpg?t=1",
+		"http://a.pic1.ajkimg.com/display/hj/47399bbe182d7515cbcab4c56ce626d4/600x450.jpg?t=1",
+		"http://b.pic1.ajkimg.com/display/hj/e951104fa83ee32c77e9c8786acbf8fb/600x450.jpg?t=1"
+	],
+	"name": "新迎温泉花园 两室 家具齐全 拎包入住 好楼层",
+	"methodId": "m1",
+	"totalPrice": "1700",
+	"type": "2室1厅1卫",
+	"area": "70",
+	"price": "1700",
+	"floor": "3/7",
+	"direction": "南北",
+	"entireType": "普通住宅",
+	"decoration": "中等装修",
+	"years": "2015",
+	"location": "盘龙  新迎片区",
+	"pay": "年付",
+	"renting": "合租",
+	"publishAt": "2017-03-26",
+	"manager": {
+		"id": "1",
+		"name": "杨珂",
+		"corp": "官房地产"
+	},
+	"desc": [{
+		"name": "小区介绍",
+		"content": [
+			"新迎温泉花园属于老小区，周边配套设施齐全，交通便捷{出行可乘坐多路公交，出租车 空港快线"
+		]
+	}, {
+		"name": "周边介绍",
+		"content": [
+			"房子周边都有各大银行，医院，超市"
+		]
+	}, {
+		"name": "房源介绍",
+		"content": [
+			"此房精装修，干净整洁  两室一厅 居家合租都是很不错的选择， 小区安全 安静  ",
+			"家具基本齐全，床一张，茶几 衣柜 电视，电视柜 沙发等。",
+			"房子图片真实，有钥匙随时可看房。"
+		]
+	}]
+}

@@ -45,17 +45,17 @@
 	"methodId": "m1"
 }, {
 	"id": "A766582755",
-	"img": "http://a.pic1.ajkimg.com/display/hj/4088aaf5f8a34bd2caead321610c849c/600x450.jpg?t=1",
-	"name": "新迎片区 凯悦时代香舍 繁华地段商铺出租",
+	"img": "http://a.pic1.ajkimg.com/display/hj/8a1681f5c3d42aded0e84dbd6efad9f2/600x450.jpg",
+	"name": "新迎温泉花园 两室 家具齐全 拎包入住",
 	"location": "盘龙 新迎片区",
 	"estate": "云秀康园",
 	"estateId": "e2",
-	"type": "1室1厅",
-	"typeId": "t1",
-	"area": "117",
+	"type": "2室1厅1卫",
+	"typeId": "t2",
+	"area": "70",
 	"price": "1.1元/平米/月",
-	"totalPrice": "10300",
-	"priceId": "p24",
+	"totalPrice": "1700",
+	"priceId": "p21",
 	"tags": ["中等装修", "合租"],
 	"methodId": "m1"
 }]
