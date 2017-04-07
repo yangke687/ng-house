@@ -1,8 +1,8 @@
 angular.module('myApp')
 	.controller('searchController', ['dict', '$http', 'cache', '$scope', function(dict, $http, cache, $scope) {
 		$scope.tabList = [{
-			id: 'estate',
-			name: '楼盘',
+			id: 'district',
+			name: '区域',
 		}, {
 			id: 'price',
 			name: '售价'
@@ -39,8 +39,8 @@ angular.module('myApp')
 				angular.forEach($scope.tabList, function(item) {
 					if (item.id === tabId)
 						switch (item.id) {
-							case 'estate':
-								item.name = '楼盘';
+							case 'district':
+								item.name = '区域';
 								break;
 							case 'price':
 								item.name = '售价';

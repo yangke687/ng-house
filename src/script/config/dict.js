@@ -1,9 +1,9 @@
 angular.module('myApp')
 	.value('dict', {})
 	.run(['dict', '$http', 'cache', 'localStorageService', function(dict, $http, cache, localStorageService) {
-		$http.get('/data/estate.json')
+		$http.get('/data/district.json')
 			.then(function(res) {
-				dict.estate = res.data;
+				dict.district = res.data;
 			}, function() {})
 			.catch(function(e) {
 				console.log("Error:", e);
