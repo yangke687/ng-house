@@ -1,7 +1,11 @@
 angular.module('myApp')
-	.controller('recoController',['localStorageService','$scope',function(localStorageService,$scope){
+	.controller('recoController',['$http','$scope',function($http,$scope){
 		$scope.list = [];
-		if (localStorageService.isSupported) {
-			$scope.list = localStorageService.get('history');
-		}
+		$http.get('/data/houseList.json')
+			.then(function(res) {
+				$scope.list = res.data;
+			})
+			.then(function(err) {
+				// handle err
+			});
 	}]);
