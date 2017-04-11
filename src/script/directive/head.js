@@ -4,6 +4,9 @@ angular.module('myApp')
 			restrict: 'A',
 			replace: true,
 			templateUrl: 'view/template/head.html',
+			scope: {
+				text: '='
+			},
 			link: function(scope) {
 				scope.methodName = cache.getObj('method')['name'];
 				scope.$on('updateMethod', function() {

@@ -3,6 +3,6 @@
 		<span class="text" ng-bind="methodName"></span>
 		<span class="caret"></span>
 	</div>
-	<span class="text">最新房源</span>
+	<span class="text" ng-bind="text?text:'最新房源'"></span>
 	<div app-sheet select="sClick(id,name)" is-visible="isVisible" list="methodList"></div>
 </div>
