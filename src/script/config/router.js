@@ -15,6 +15,11 @@ angular.module('myApp')
 				templateUrl: 'view/me.html',
 				controller: 'meController'
 			})
+			.state('recommend',{
+				url: '/recommend',
+				templateUrl: 'view/recommend.html',
+				controller: 'recoController'
+			})
 			.state('house', {
 				url: '/house/:id',
 				templateUrl: 'view/house.html',
