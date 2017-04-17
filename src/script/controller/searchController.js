@@ -1,5 +1,5 @@
 angular.module('myApp')
-	.controller('searchController', ['dict', '$http', 'cache', '$scope', function(dict, $http, cache, $scope) {
+	.controller('searchController', ['dict', '$http', 'cache', '$location','$scope', function(dict, $http, cache,$location,$scope) {
 		$scope.tabList = [{
 			id: 'district',
 			name: '区域',
@@ -31,11 +31,14 @@ angular.module('myApp')
 				angular.forEach($scope.tabList, function(item) {
 					if (item.id === tabId) {
 						item.name = name;
-						$scope.filterObj[tabId + 'Id'] = id;
+						//$scope.filterObj[tabId + 'Id'] = id;
+						$location.search(tabId+'Id',id);
 					}
 				});
 			} else {
-				delete $scope.filterObj[tabId + 'Id'];
+				//delete $scope.filterObj[tabId + 'Id'];
+				$location.search(tabId+'Id',null);
+
 				angular.forEach($scope.tabList, function(item) {
 					if (item.id === tabId)
 						switch (item.id) {
@@ -53,7 +56,16 @@ angular.module('myApp')
 			}
 		}
 		$scope.search = function() {
-			$http.get($scope.backendUrlBase+'/houseList.do')
+			var url = $scope.backendUrlBase+'/houseList.do';
+			var params = '';
+			for(var key in $location.search()){
+				params += key+'='+$location.search()[key]+'&';
+			}
+			if(params){
+				url += '?'+params;
+			}
+			//
+			$http.get(url)
 				.then(function(res) {
 					$scope.list = res.data;
 				}, function(err) {
@@ -61,4 +73,7 @@ angular.module('myApp')
 				});
 		}
 		$scope.search();
+		$scope.$on('$locationChangeSuccess',function(){
+			$scope.search();
+		});
 	}]);
