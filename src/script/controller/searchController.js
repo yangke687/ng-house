@@ -53,7 +53,7 @@ angular.module('myApp')
 			}
 		}
 		$scope.search = function() {
-			$http.get('/data/houseList.json')
+			$http.get($scope.backendUrlBase+'/houseList.do')
 				.then(function(res) {
 					$scope.list = res.data;
 				}, function(err) {

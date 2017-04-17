@@ -8,11 +8,11 @@ angular.module('myApp')
 				lng: 102.73333,
 				lat: 25.05000,
 			};
-			$http.get('/data/houseList.json')
+			$http.get($scope.backendUrlBase + '/houseList.do')
 				.then(function(res) {
 					$scope.list = res.data;
 				}, function() {});
-			$http.get('/data/house-' + $scope.id + '.json')
+			$http.get($scope.backendUrlBase + '/houseDetail.do?id=' + $scope.id)
 				.then(function(res) {
 					$scope.house = res.data;
 					// put current house obj in localStorage

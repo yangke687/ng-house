@@ -1,6 +1,9 @@
 angular.module('myApp')
+	.run(function($rootScope){
+		$rootScope.backendUrlBase = 'http://192.168.17.159/shop/rentSellHouse';
+	})
 	.value('dict', {})
-	.run(['dict', '$http', 'cache', 'localStorageService', function(dict, $http, cache, localStorageService) {
+	.run(['dict', '$http', 'cache', 'localStorageService','$rootScope', function(dict, $http, cache, localStorageService, $rootScope) {
 		$http.get('/data/district.json')
 			.then(function(res) {
 				dict.district = res.data;
@@ -24,7 +27,7 @@ angular.module('myApp')
 			}, function(err) {
 				// error handling...
 			});
-		$http.get('/data/method.json')
+		$http.get($rootScope.backendUrlBase+'/methodTypeList.do')
 			.then(function(res) {
 				dict.method = res.data;
 				cache.put('method', dict.method[0]);

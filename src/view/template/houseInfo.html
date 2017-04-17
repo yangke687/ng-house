@@ -28,7 +28,7 @@
 			<li class="block">
 				<h2 ng-bind="house.totalPrice+(house.methodId=='m2'?'万':'元／月')"></h2>
 				<div class="content">
-					<span ng-bind="house.methodId=='m1'?'租金':'售价'"></span>
+					<span ng-bind="house.methodId=='0'?'租金':'售价'"></span>
 				</div>
 			</li>
 			<li class="block">
@@ -49,10 +49,10 @@
 		<ul>
 			<li>
 				<div>
-					<label for="" ng-bind="(house.methodId=='m1'?'租金':'单价')+':'"></label>
-					<span ng-bind="house.price+(house.methodId=='m1'?'元/月':'元/平米')"></span>
+					<label for="" ng-bind="(house.methodId=='0'?'租金':'单价')+':'"></label>
+					<span ng-bind="house.price+(house.methodId=='0'?'元/月':'元/平米')"></span>
 				</div>
-				<div ng-show="house.methodId=='m1'">
+				<div ng-show="house.methodId=='0'">
 					<label for="" >租赁:</label>
 					<span ng-bind="house.renting"></span>
 				</div>
@@ -78,7 +78,7 @@
 				</div>
 			</li>
 			<li>
-				<div ng-show="house.methodId=='m1'">
+				<div ng-show="house.methodId=='0'">
 					<label for="">押付:</label>
 					<span ng-bind="house.pay"></span>
 				</div>

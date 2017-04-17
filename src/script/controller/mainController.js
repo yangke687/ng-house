@@ -1,6 +1,6 @@
 angular.module('myApp')
 	.controller('mainController', ['$http', 'cache', 'dict', '$scope', function($http, cache, dict, $scope) {
-		$http.get('/data/houseList.json')
+		$http.get($scope.backendUrlBase+'/houseList.do')
 			.then(function(res) {
 				$scope.list = res.data;
 			})
