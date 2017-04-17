@@ -4,7 +4,7 @@ angular.module('myApp')
 	})
 	.value('dict', {})
 	.run(['dict', '$http', 'cache', 'localStorageService','$rootScope', function(dict, $http, cache, localStorageService, $rootScope) {
-		$http.get('/data/district.json')
+		$http.get($rootScope.backendUrlBase+'/districtList.do')
 			.then(function(res) {
 				dict.district = res.data;
 			}, function() {})
@@ -15,13 +15,13 @@ angular.module('myApp')
 			.finally(function() {
 				console.log("Finaly Block");
 			});
-		$http.get('/data/price.json')
+		$http.get($rootScope.backendUrlBase+'/priceTypeList.do')
 			.then(function(res) {
 				dict.price = res.data;
 			}, function(err) {
 				// error handling...
 			});
-		$http.get('/data/houseType.json')
+		$http.get($rootScope.backendUrlBase+'/houseTypeList.do')
 			.then(function(res) {
 				dict.type = res.data;
 			}, function(err) {
