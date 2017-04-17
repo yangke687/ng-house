@@ -1,5 +1,6 @@
 angular.module('myApp')
 	.controller('searchController', ['dict', '$http', 'cache', '$location','$scope', function(dict, $http, cache,$location,$scope) {
+		$scope.keyword = '';
 		$scope.tabList = [{
 			id: 'district',
 			name: '区域',
@@ -56,15 +57,28 @@ angular.module('myApp')
 			}
 		}
 		$scope.search = function() {
+			// url
 			var url = $scope.backendUrlBase+'/houseList.do';
 			var params = '';
+			// keyword 
+			if($scope.keyword){
+				$location.search('name',$scope.keyword);
+			}
+			else{
+				// else remove keyword
+				$location.search('name',null);
+			}
+			
+			// compose params
 			for(var key in $location.search()){
 				params += key+'='+$location.search()[key]+'&';
 			}
 			if(params){
 				url += '?'+params;
 			}
-			//
+			console.log($scope.keyword);
+
+			// fetch data
 			$http.get(url)
 				.then(function(res) {
 					$scope.list = res.data;
