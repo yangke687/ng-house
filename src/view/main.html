@@ -1,3 +1,6 @@
 <div app-head></div>
-<div app-house-list data="list" filter-obj="filterObj"></div>
+<div infinite-scroll='nextPage()' infinite-scroll-disabled='busy' infinite-scroll-distance='1'>
+	<div app-house-list data="list" filter-obj="filterObj"></div>
+	<div ng-show='false'>Loading data...</div>
+</div>
 <div app-foot></div>
