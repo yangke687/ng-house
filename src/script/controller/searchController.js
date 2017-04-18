@@ -56,9 +56,18 @@ angular.module('myApp')
 				});
 			}
 		}
+		$scope.list = [];
+		// pagination
+		$scope.rows = 6;
+		$scope.next = 1;
+		$scope.max = 1;
+		// infinite-scroll disable swtich
+		$scope.busy = false;
 		$scope.search = function() {
+			if ($scope.busy) return;
+    		$scope.busy = true;
 			// url
-			var url = $scope.backendUrlBase+'/houseList.do';
+			var url = $scope.backendUrlBase+'/houseList.do?rows='+$scope.rows+'&page='+$scope.next+'&';
 			var params = '';
 			// keyword 
 			if($scope.keyword){
@@ -74,20 +83,34 @@ angular.module('myApp')
 				params += key+'='+$location.search()[key]+'&';
 			}
 			if(params){
-				url += '?'+params;
+				url += params;
 			}
-			console.log($scope.keyword);
 
 			// fetch data
 			$http.get(url)
 				.then(function(res) {
-					$scope.list = res.data;
+					$scope.max = res.data.maxPage;
+					for(var i=0;i<res.data.list.length;i++){
+						$scope.list.push(res.data.list[i]);
+					}
+					$scope.next = parseInt($scope.list.length/$scope.rows)+1;
+					if($scope.next<=$scope.max){
+						$scope.busy = false;
+					}
+					else{
+						$scope.busy = true;
+					}
 				}, function(err) {
 					// errro handling...
 				});
 		}
-		$scope.search();
 		$scope.$on('$locationChangeSuccess',function(){
+			// reset pagination params
+			$scope.rows = 6;
+			$scope.next = 1;
+			$scope.max = 1;
+			$scope.list = [];
+			console.log('reset');
 			$scope.search();
 		});
 	}]);
