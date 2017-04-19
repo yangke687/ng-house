@@ -19,7 +19,7 @@ angular.module('myApp')
 				for(var i=0;i<res.data.list.length;i++){
 					$scope.list.push(res.data.list[i]);
 				}
-				$scope.next = parseInt($scope.list.length/$scope.rows)+1;
+				$scope.next = Math.ceil($scope.list.length/$scope.rows)+1;
 				//console.log( $scope.next, $scope.max );
 				if($scope.next<=$scope.max){
 					$scope.busy = false;
