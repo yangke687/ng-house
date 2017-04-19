@@ -3,12 +3,11 @@ angular.module('myApp')
 
 		function($http, $stateParams, localStorageService, _, $scope) {
 			$scope.id = $stateParams.id;
-			$scope.numLimit = 2;
 			$scope.mapOpts = {
 				lng: 102.73333,
 				lat: 25.05000,
 			};
-			$http.get($scope.backendUrlBase + '/houseList.do')
+			$http.get($scope.backendUrlBase + '/houseList.do?rows=5&page=1')
 				.then(function(res) {
 					$scope.list = res.data.list;
 				}, function() {});
