@@ -136,7 +136,11 @@ angular.module('myApp')
 			$scope.isWatching = false;
 			$scope.search($scope.composeUrl());
 		}
-		//
+		
+		$scope.keywordClear = function(){
+			$scope.keyword = '';
+		}
+
 		$scope.$on('$locationChangeSuccess', function(){
 			if(!$scope.isWatching){
 				return;
