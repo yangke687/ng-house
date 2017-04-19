@@ -5,9 +5,9 @@
 			<p class="title" ng-bind="item.name"></p>
 			<p class="location" ng-bind="item.location"></p>
 			<p class="desc">
-				<span ng-bind="item.type"></span>
+				<span class="d-ib" ng-bind="item.type"></span>
 				<span ng-bind="item.area+'平米'"></span>
-				<span class="f-r" ng-bind="item.totalPrice+(item.methodId=='0'?'元/月':'万')"></span>
+				<span class="f-r" ng-bind="item.totalPrice+(item.methodId=='0'?'元':'万')"></span>
 				<span class="clear"></span>
 			</p>
 			<p class="tags">
