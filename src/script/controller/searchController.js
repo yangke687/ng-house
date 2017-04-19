@@ -28,6 +28,7 @@ angular.module('myApp')
 			$scope.sheet.visible = true;
 		}
 		$scope.sClick = function(id, name) {
+			$scope.isWatching = true;
 			if (id) {
 				angular.forEach($scope.tabList, function(item) {
 					if (item.id === tabId) {
@@ -63,9 +64,10 @@ angular.module('myApp')
 		$scope.max = 1;
 		// infinite-scroll disable swtich
 		$scope.busy = false;
-		$scope.search = function() {
-			if ($scope.busy) return;
-    		$scope.busy = true;
+		// isWatching switch
+		$scope.isWatching = false;
+		// compose url
+		$scope.composeUrl = function(){
 			// url
 			var url = $scope.backendUrlBase+'/houseList.do?rows='+$scope.rows+'&page='+$scope.next+'&';
 			var params = '';
@@ -85,6 +87,13 @@ angular.module('myApp')
 			if(params){
 				url += params;
 			}
+			return url;
+		};
+		// search
+		$scope.search = function(url) {
+			//console.log('search');
+			if ($scope.busy) return;
+    		$scope.busy = true;
 
 			// fetch data
 			$http.get(url)
@@ -93,7 +102,8 @@ angular.module('myApp')
 					for(var i=0;i<res.data.list.length;i++){
 						$scope.list.push(res.data.list[i]);
 					}
-					$scope.next = parseInt($scope.list.length/$scope.rows)+1;
+					$scope.next = Math.ceil($scope.list.length/$scope.rows)+1;
+					console.log( $scope.next , $scope.max );
 					if($scope.next<=$scope.max){
 						$scope.busy = false;
 					}
@@ -104,13 +114,34 @@ angular.module('myApp')
 					// errro handling...
 				});
 		}
-		$scope.$on('$locationChangeSuccess',function(){
-			// reset pagination params
+		// reset location params
+		$scope.resetLocationParams = function(){
+			angular.forEach($scope.tabList, function(item) {
+				$location.search(item.id+'Id',null);
+			});
+		};
+		// reset scope properties
+		$scope.resetScope = function(){
 			$scope.rows = 6;
 			$scope.next = 1;
 			$scope.max = 1;
 			$scope.list = [];
-			console.log('reset');
-			$scope.search();
+			$scope.busy = false;
+			$scope.isWatching = true;
+		};
+		
+		$scope.keywordSearch = function(){
+			$scope.resetLocationParams();
+			$scope.resetScope();
+			$scope.isWatching = false;
+			$scope.search($scope.composeUrl());
+		}
+		//
+		$scope.$on('$locationChangeSuccess', function(){
+			if(!$scope.isWatching){
+				return;
+			}
+			$scope.resetScope();
+			$scope.search($scope.composeUrl());
 		});
 	}]);
