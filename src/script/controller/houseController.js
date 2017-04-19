@@ -10,7 +10,7 @@ angular.module('myApp')
 			};
 			$http.get($scope.backendUrlBase + '/houseList.do')
 				.then(function(res) {
-					$scope.list = res.data;
+					$scope.list = res.data.list;
 				}, function() {});
 			$http.get($scope.backendUrlBase + '/houseDetail.do?id=' + $scope.id)
 				.then(function(res) {
