@@ -1,6 +1,6 @@
 angular.module('myApp')
 	.run(function($rootScope){
-		$rootScope.backendUrlBase = 'http://192.168.17.159/shop/rentSellHouse';
+		$rootScope.backendUrlBase = 'http://gfwy.wyglpt.com/shop/rentSellHouse';
 	})
 	.value('dict', {})
 	.run(['dict', '$http', 'cache', 'localStorageService','$rootScope', function(dict, $http, cache, localStorageService, $rootScope) {
